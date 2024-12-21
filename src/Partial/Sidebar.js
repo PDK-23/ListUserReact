@@ -47,7 +47,7 @@ export default function Sidebar({ setRole }) {
             <li
               className={`flex items-center pl-5 w-full mt-4 h-12 cursor-pointer hover:border-r-4 hover:border-orange-400 ${activeRole === "ma" ? "border-r-4 border-orange-500" : ""
                 }`}
-              onClick={() => handleRoleClick("ma")}
+              onClick={() => handleRoleClick("manager")}
             >
               <img src={MaIcon} className="w-auto h-6 mr-2 bg-cover" />
               <p className='pl-1'>Manager</p>

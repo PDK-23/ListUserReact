@@ -12,11 +12,15 @@ export default function Sidebar({ setRole }) {
     setRole(role);
   };
 
+  const handleClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
   return (
     <div className="flex flex-col min-h-full">
       <div className="sticky top-0">
-        <div className="mb-5 border bg-orange-400 h-16 flex items-center rounded-br-3xl">
-          <p className=" text-xl font-bold pl-3 text-white">NgLearn</p>
+        <div onClick={handleClick} className="mb-5 border bg-orange-400 h-16 flex items-center cursor-pointer rounded-br-3xl">
+          <p className="text-xl font-bold pl-3 text-white">NgLearn</p>
         </div>
         <div>
           <ul>

@@ -3,6 +3,7 @@ import { fetchUserList } from "../Module/getListUser";
 import UserCard from "./UserCard";
 import Sidebar from "./Sidebar";
 import Header from "./Header";
+import ScrollTop from "../components/ScrollTop/ScrollTop";
 
 export default function UserList() {
   const [lstUser, setLstUser] = useState([]);
@@ -71,6 +72,7 @@ export default function UserList() {
           ))}
         </div>
       </div>
+      <ScrollTop />
     </div>
   );
 }

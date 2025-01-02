@@ -19,7 +19,7 @@ export default function Sidebar({ setRole }) {
           <p className=" text-xl font-bold pl-3 text-white">NgLearn</p>
         </div>
         <div>
-          <ul className="">
+          <ul>
             <li
               className={`flex items-center pl-5 w-full mt-4 h-12 cursor-pointer hover:border-r-4 hover:border-orange-400 ${activeRole === "dev" ? "border-r-4 border-orange-500" : ""
                 }`}

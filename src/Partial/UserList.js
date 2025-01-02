@@ -44,8 +44,8 @@ export default function UserList() {
         <Header search={search} setSearch={setSearch} />
         <div className="flex items-center justify-between mt-5 mb-11">
           <h1 className="text-2xl font-semibold my-4 text-orange-400">User List</h1>
-          <div className="flex flex-col">
-            <p className="font-semibold">Gender:</p>
+          <div className="flex items-center">
+            <p className="font-semibold mr-3">Gender:</p>
             <select
               value={gender}
               onChange={(e) => setGender(e.target.value)}

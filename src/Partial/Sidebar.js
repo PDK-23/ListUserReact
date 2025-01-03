@@ -49,7 +49,7 @@ export default function Sidebar({ setRole }) {
               <p className='pl-2.5'>Business Analysis</p>
             </li>
             <li
-              className={`flex items-center pl-5 w-full mt-4 h-12 cursor-pointer hover:border-r-4 hover:border-orange-400 ${activeRole === "ma" ? "border-r-4 border-orange-500" : ""
+              className={`flex items-center pl-5 w-full mt-4 h-12 cursor-pointer hover:border-r-4 hover:border-orange-400 ${activeRole === "manager" ? "border-r-4 border-orange-500" : ""
                 }`}
               onClick={() => handleRoleClick("manager")}
             >

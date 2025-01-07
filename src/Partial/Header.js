@@ -1,6 +1,7 @@
 import React from "react";
 import UserIcon from "../Icon/user.png"
 import GridIcon from "../Icon/grid.png"
+// import { Input } from "antd";
 
 export default function Header({ search, setSearch }) {
   return (
@@ -31,6 +32,7 @@ export default function Header({ search, setSearch }) {
           >
             Search name
           </label>
+          {/* <Input size="large" placeholder="Search" value={search} onChange={(e) => setSearch(e.target.value)}/> */}
         </div>
       </div>
     </div>

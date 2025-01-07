@@ -3,6 +3,7 @@ import BaIcon from "../Icon/ba.png";
 import devIcon from "../Icon/developer.png";
 import MaIcon from "../Icon/manager.png";
 import TeIcon from "../Icon/tester.png";
+import { ListComponent } from './SidebarPartial/ListComponent';
 
 export default function Sidebar({ setRole }) {
   const [activeRole, setActiveRole] = useState("dev");
@@ -24,38 +25,31 @@ export default function Sidebar({ setRole }) {
         </div>
         <div>
           <ul>
-            <li
-              className={`flex items-center pl-5 w-full mt-4 h-12 cursor-pointer hover:border-r-4 hover:border-orange-400 ${activeRole === "dev" ? "border-r-4 border-orange-500" : ""
-                }`}
-              onClick={() => handleRoleClick("dev")}
-            >
-              <img src={devIcon} className="w-auto h-6 mr-2 bg-cover" />
-              <p className='pl-2.5'>Developer</p>
-            </li>
-            <li
-              className={`flex items-center pl-5 w-full mt-4 h-12 cursor-pointer hover:border-r-4 hover:border-orange-400 ${activeRole === "test" ? "border-r-4 border-orange-500" : ""
-                }`}
+            <ListComponent activeRoles={activeRole} onClick={handleRoleClick} value={"dev"} title={"developer"} icon={devIcon}/>
+            <ListComponent activeRoles={activeRole} onClick={handleRoleClick} value={"test"} title={"Tester"} icon={TeIcon}/>
+            <ListComponent activeRoles={activeRole} onClick={handleRoleClick} value={"ba"} title={"Business Analysis"} icon={BaIcon}/>
+            <ListComponent activeRoles={activeRole} onClick={handleRoleClick} value={"manager"} title={"Manager"} icon={MaIcon}/>
+            {/* <li
+              className={`flex items-center pl-5 w-full mt-4 h-12 cursor-pointer hover:border-r-4 hover:border-orange-400 ${activeRole === "test" ? "border-r-4 border-orange-500" : ""}`}
               onClick={() => handleRoleClick("test")}
             >
               <img src={TeIcon} className="w-auto h-6 mr-2 bg-cover" />
               <p className='pl-2.5'>Tester</p>
             </li>
             <li
-              className={`flex items-center pl-5 w-full mt-4 h-12 cursor-pointer hover:border-r-4 hover:border-orange-400 ${activeRole === "ba" ? "border-r-4 border-orange-500" : ""
-                }`}
+              className={`flex items-center pl-5 w-full mt-4 h-12 cursor-pointer hover:border-r-4 hover:border-orange-400 ${activeRole === "ba" ? "border-r-4 border-orange-500" : ""}`}
               onClick={() => handleRoleClick("ba")}
             >
               <img src={BaIcon} className="w-auto h-6 mr-2 bg-cover" />
               <p className='pl-2.5'>Business Analysis</p>
             </li>
             <li
-              className={`flex items-center pl-5 w-full mt-4 h-12 cursor-pointer hover:border-r-4 hover:border-orange-400 ${activeRole === "manager" ? "border-r-4 border-orange-500" : ""
-                }`}
+              className={`flex items-center pl-5 w-full mt-4 h-12 cursor-pointer hover:border-r-4 hover:border-orange-400 ${activeRole === "manager" ? "border-r-4 border-orange-500" : ""}`}
               onClick={() => handleRoleClick("manager")}
             >
               <img src={MaIcon} className="w-auto h-6 mr-2 bg-cover" />
-              <p className='pl-1'>Manager</p>
-            </li>
+              <p className='pl-1'>Manager</p> 
+            </li>*/}
           </ul>
         </div>
       </div>

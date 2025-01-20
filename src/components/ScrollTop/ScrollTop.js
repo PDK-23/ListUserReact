@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { IoMdArrowRoundUp } from "react-icons/io";
+import { scrollToTop } from "../../hook/hookScrollTop";
 
 export default function ScrollTop() {
     const [isVisible, setIsVisible] = useState(false);
@@ -10,10 +11,6 @@ export default function ScrollTop() {
         } else {
             setIsVisible(false);
         }
-    };
-
-    const scrollToTop = () => {
-        window.scrollTo({ top: 0, behavior: "smooth", });
     };
 
     useEffect(() => {

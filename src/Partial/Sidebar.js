@@ -29,7 +29,7 @@ export default function Sidebar({ setRole }) {
                 }`}
               onClick={() => handleRoleClick("dev")}
             >
-              <img src={devIcon} className="w-auto h-6 mr-2 bg-cover" />
+              <img src={devIcon} alt="" className="w-auto h-6 mr-2 bg-cover" />
               <p className='pl-2.5'>Developer</p>
             </li>
             <li
@@ -37,7 +37,7 @@ export default function Sidebar({ setRole }) {
                 }`}
               onClick={() => handleRoleClick("test")}
             >
-              <img src={TeIcon} className="w-auto h-6 mr-2 bg-cover" />
+              <img src={TeIcon} alt="" className="w-auto h-6 mr-2 bg-cover" />
               <p className='pl-2.5'>Tester</p>
             </li>
             <li
@@ -45,7 +45,7 @@ export default function Sidebar({ setRole }) {
                 }`}
               onClick={() => handleRoleClick("ba")}
             >
-              <img src={BaIcon} className="w-auto h-6 mr-2 bg-cover" />
+              <img src={BaIcon} alt="" className="w-auto h-6 mr-2 bg-cover" />
               <p className='pl-2.5'>Business Analysis</p>
             </li>
             <li
@@ -53,7 +53,7 @@ export default function Sidebar({ setRole }) {
                 }`}
               onClick={() => handleRoleClick("manager")}
             >
-              <img src={MaIcon} className="w-auto h-6 mr-2 bg-cover" />
+              <img src={MaIcon} alt="" className="w-auto h-6 mr-2 bg-cover" />
               <p className='pl-1'>Manager</p>
             </li>
           </ul>

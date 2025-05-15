@@ -5,14 +5,14 @@ import GridIcon from "../Icon/grid.png"
 export default function Header({ search, setSearch }) {
   return (
     <div>
-      <div className="mb-4 text-orange-400 flex items-center justify-between">
-        <h1 className="text-2xl font-semibold">User Account Management</h1>
-        <div className="flex items-center">
+      <div className="mb-4 text-orange-400 flex flex-col sm:flex-col md:flex-row items-center justify-between">
+        <h1 className="text-xl sm:text-xl md:text-2xl font-semibold text-center md:text-left">User Account Management</h1>
+        <div className="flex items-center mt-2 md:mt-0">
           <img src={UserIcon} alt="" className="w-auto h-6 mx-2 bg-cover" />
           <img src={GridIcon} alt="" className="w-auto h-6 bg-cover" />
         </div>
       </div>
-      <div>
+      <div className="w-full">
         <div className="relative">
           <input
             type="search"

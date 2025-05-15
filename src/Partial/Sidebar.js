@@ -17,8 +17,8 @@ export default function Sidebar({ setRole }) {
   }
 
   return (
-    <div className="hidden md:flex flex-col min-h-full h-screen overflow-y-auto">
-      <div className="sticky top-0 z-10">
+    <div className="hidden md:flex flex-col min-h-full h-screen">
+      <div className="sticky top-0">
         <div onClick={handleClick} className="mb-5 border bg-orange-400 h-16 flex items-center cursor-pointer rounded-br-3xl">
           <p className="text-lg md:text-xl font-bold pl-3 text-white">NgLearn</p>
         </div>

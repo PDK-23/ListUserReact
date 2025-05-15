@@ -14,3 +14,5 @@ Beside that, you need to create some feature like:
 3.	On the right side of the screen, you can search by typing the desired search key into the input field. You can search through the Name or Email of the user list, which is referred to as feature 1. 
 
 4.	Additionally, we can filter users by gender by selecting Male or Female from the dropdown list located on the right side of the screen.
+5. deploy web app by azure.
+deploy web url: https://ambitious-island-0d0e75810.6.azurestaticapps.net/

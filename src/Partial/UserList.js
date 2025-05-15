@@ -48,10 +48,10 @@ export default function UserList() {
 
   return (
     <div className="grid grid-cols-12 md:grid-cols-12 sm:grid-cols-1">
-      <div className="col-span-2 md:col-span-2 sm:col-span-1 sm:hidden md:block">
+      <div className="hidden md:block col-span-2 md:col-span-2">
         <Sidebar setRole={setRole} />
       </div>
-      <div className="min-h-screen bg-gray-100 flex flex-col p-4 w-full col-span-10 md:col-span-10 sm:col-span-full">
+      <div className="min-h-screen bg-gray-100 flex flex-col p-4 w-full col-span-12 md:col-span-10">
         <Header search={search} setSearch={setSearch} />
         <div className="flex flex-col sm:flex-col md:flex-row items-center justify-between mt-5 mb-11">
           <h1 className="text-2xl font-semibold my-4 text-orange-400">User List</h1>

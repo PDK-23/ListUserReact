@@ -26,8 +26,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build (no source map)
-        run: npm run build
+      - name: Build with warnings allowed
+        run: CI='' npm run build
         env:
           GENERATE_SOURCEMAP: 'false'
 

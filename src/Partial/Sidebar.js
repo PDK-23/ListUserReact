@@ -3,7 +3,6 @@ import BaIcon from "../Icon/ba.png";
 import devIcon from "../Icon/developer.png";
 import MaIcon from "../Icon/manager.png";
 import TeIcon from "../Icon/tester.png";
-import { ListComponent } from './SidebarPartial/ListComponent';
 
 export default function Sidebar({ setRole }) {
   const [activeRole, setActiveRole] = useState("dev");

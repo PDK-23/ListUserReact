@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Security Warning</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen m-0 p-0 text-center">
+  <div class="max-w-2xl p-10 bg-white rounded-lg shadow-md">
+    <div class="text-3xl text-red-600 mb-5">Security Alert</div>
+    <img src="https://i.imgur.com/qIufhof.png" alt="Astronaut" class="max-w-[200px] mx-auto my-5">
+    <div class="text-lg text-gray-800 mb-5">What Are You Looking For?</div>
+    <div class="text-base text-gray-600 mb-8">Developer tools are not allowed in this application for security reasons.</div>
+    <button onclick="window.location.href='/'" class="bg-blue-500 text-white border-none py-3 px-6 rounded text-base cursor-pointer transition-colors hover:bg-blue-700">Return to Homepage</button>
+  </div>
+
+  <script>
+    // Prevent going back to the app with dev tools open
+    window.history.pushState(null, null, document.URL);
+    window.addEventListener('popstate', function () {
+      window.history.pushState(null, null, document.URL);
+    });
+    
+    // Additional security measures
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    document.addEventListener('keydown', e => {
+      if (e.key === 'F12' || 
+         (e.ctrlKey && e.shiftKey && e.key === 'I') ||
+         (e.ctrlKey && e.shiftKey && e.key === 'J') ||
+         (e.ctrlKey && e.shiftKey && e.key === 'C')) {
+        e.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html> 
